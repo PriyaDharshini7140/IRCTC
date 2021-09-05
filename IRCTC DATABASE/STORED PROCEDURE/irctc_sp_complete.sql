@@ -3,7 +3,7 @@
 
 
 ---list of users----
-CREATE PROCEDURE SP_USER_DETAILS
+alter PROCEDURE SP_USER_DETAILS
 AS
 BEGIN
 SELECT * FROM TBL_USER;
@@ -24,7 +24,7 @@ EXECUTE SP_SELECT_USER_DETAILS
 ------insert tbl_user----------
 
 
-CREATE PROCEDURE SP_INSERT_USER_DETAILS
+alter PROCEDURE SP_INSERT_USER_DETAILS
 @USER_ID INT,
 @USERNAME VARCHAR(20),
 @PASSWORD VARCHAR(20),
@@ -38,14 +38,13 @@ CREATE PROCEDURE SP_INSERT_USER_DETAILS
 @DOOR_NO VARCHAR(20),
 @STREET_NAME VARCHAR(20),
 @CITY VARCHAR(20),
-@STATE VARCHAR(40),
 @PINCODE VARCHAR(20),
 @CREATED_BY VARCHAR(20),
 @MODIFIED_BY VARCHAR(20)
 AS
 BEGIN
 INSERT INTO TBL_USER (USER_ID,USERNAME,PASSWORD,
-SEC_QUESTION,SEC_ANSWER,FULL_NAME,DOB,MAIL_ID,GENDER,MOBILE_NO,DOOR_NO,STREET_NAME,CITY,STATE,PINCODE,CREATED_BY,MODIFIED_BY) 
+SEC_QUESTION,SEC_ANSWER,FULL_NAME,DOB,MAIL_ID,GENDER,MOBILE_NO,DOOR_NO,STREET_NAME,CITY,PINCODE,CREATED_BY,MODIFIED_BY) 
 VALUES (
 		    @USER_ID,
 			@USERNAME ,
@@ -60,7 +59,6 @@ VALUES (
 			@DOOR_NO ,
 			@STREET_NAME ,
 			@CITY ,
-			@STATE,
 			@PINCODE ,
 			@CREATED_BY ,
 			@MODIFIED_BY )
@@ -79,7 +77,6 @@ EXECUTE SP_INSERT_USER_DETAILS
 			@DOOR_NO = 'A13',
 			@STREET_NAME ='ABS ROOD' ,
 			@CITY ='CHENNAI',
-			@STATE ='TAMILNADU',
 			@PINCODE = '678987',
 			@CREATED_BY ='ram',
 			@MODIFIED_BY ='ram'
@@ -111,7 +108,6 @@ CREATE PROCEDURE SP_UPDATE_USER_DETAILS
 @DOOR_NO VARCHAR(20),
 @STREET_NAME VARCHAR(20),
 @CITY VARCHAR(20),
-@STATE VARCHAR(40),
 @PINCODE VARCHAR(20),
 @MODIFIED_BY VARCHAR(20)
 )
@@ -130,7 +126,6 @@ SET     USERNAME = @USERNAME,
 		DOOR_NO = @DOOR_NO,
 		STREET_NAME = @STREET_NAME,
 		CITY = @CITY,
-		STATE =@STATE,
 		PINCODE = @PINCODE,
 		MODIFIED_BY = @MODIFIED_BY
 WHERE USER_ID = @USER_ID
@@ -150,7 +145,6 @@ EXECUTE SP_UPDATE_USER_DETAILS
 			@DOOR_NO = 'A13',
 			@STREET_NAME ='ABS ROOD' ,
 			@CITY ='CHENNAI',
-			@STATE ='KERALA',
 			@PINCODE = '678987',
 			@MODIFIED_BY ='ram'
 
@@ -205,7 +199,7 @@ END
 truncate table train_details
 
 /*exec of insert*/
-exec SP_TRAIN_DETAILS 100,'EXPRESS','3','4','2021/09/02','2021/09/01','SLEEPER','Insert';
+exec SP_TRAIN_DETAILS 1,'EXPRESS','3','4','2021/09/02','2021/09/01','SLEEPER','Insert';
 
 exec SP_TRAIN_DETAILS 101,'ROYALEXPRESS','4','3','2021/10/08','2021/10/07','AC','Insert';
 
@@ -286,8 +280,11 @@ IF @statement='INSERT'
 	INSERT INTO booking_status(status_id,status_,CreatedBy,modifiedBy) VALUES(@STATUS_id,@STATUS,@CreatedBy,@modifiedBy)
 	END
 END
-exec sp_bookingSTATUS_insert 4,'booked','priya','priya','INSERT'
+
+exec sp_bookingSTATUS_insert 5,'booked','priya','priya','INSERT'
+
 select * from booking_status
+
 create procedure sp_bookingSTATUS_UPDATE 
 @STATUS_id int,
 @STATUS VARCHAR(20),
@@ -325,7 +322,8 @@ values(@booking_id,@u_id,@train_id,@passenger_count,@totalamount,@seat_count,@pn
 END
 
 
-exec sp_booking_insert 2,5,100,3,45,55,66,1,'priya','priya','INSERT'
+exec sp_booking_insert 5,5,100,3,45,55,66,1,'priya','priya','INSERT'
+
 alter procedure sp_booking_update 
 @booking_id int,
 @passenger_count int,
@@ -480,7 +478,7 @@ END
 DROP PROCEDURE PAY_CRUD
 
 SELECT * FROM Tbl_payments_detail
-EXEC PAY_CRUD 40,5,2,500,'CreditCard','Success','DIVYA','DIVYA','Insert'
+EXEC PAY_CRUD 4,5,2,500,'CreditCard','Success','DIVYA','DIVYA','Insert'
 EXEC PAY_CRUD 30,5,1,500,'CreditCard','Failed','DIVYA','DIVYA','Insert'
 
 EXEC PAY_CRUD 30,5,1,500,'CreditCard','Successful','DIVYA','DIVYA','Update'
@@ -639,14 +637,14 @@ freight_type=@freight_type
 --contact us  --thirupurasundhari
 
 /*update*/
-CREATE PROCEDURE update_contact 
+ALTER PROCEDURE update_contact 
 @contact_id int, 
 @status varchar(50)
 AS
 BEGIN
 UPDATE tbl_contact1 SET status= @status WHERE contact_id = @contact_id ;
 END;
-execute dbo.update_contact 103,'pending'
+execute dbo.update_contact 104,'pending'
 
 select * from tbl_contact1
 
@@ -672,7 +670,7 @@ END;
  begin
  select * from  tbl_contact1 where contact_id =  @contact_id
  end
- execute dbo.select_contact 103
+ execute dbo.select_contact 104
 
  /*list*/
  create procedure list_contact

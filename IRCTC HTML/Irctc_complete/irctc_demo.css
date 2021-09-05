@@ -7,20 +7,20 @@
 
 .header_menu {
     display: flex;
-    background-color: #fae9fb;
+    background-color: #ffe26f;
     line-height: 60px;
 }
 
 .header_menu h1 {
     width: 800px;
     padding:0px 0px 0px 10px;
-    color:#d338db;
+    color:#012443;
 }
 
 .navbar_header {
     display: flex;
-    color: #d338db;
-    background-color:#fae9fb;
+    color: #012443;
+    background-color:#ffe26f;
     line-height: 60px;
     height: 60px;
     justify-content: flex-end;
@@ -32,13 +32,13 @@
     /* padding:10px 30px; */
     width: 150px;
     text-align: center;
-    color:#d338db;
+    color:#012443;
 }
 
 .navbar_menu:hover {
     /* background-color: #f01616; */
-    background-color:#d338db;
-    color: #fae9fb;
+    background-color:#012443;
+    color: #ffe26f;
     cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ a {
 .s1_header {
     padding: 100px 350px;
     height: 450px;
-    color: #d338db;
+    color: #012443;
 }
 
 .s1_header h2 {
@@ -70,10 +70,10 @@ a {
     height:30px;
     /* line-height: 30px; */
     font-size: large;
-    border: 2px solid #fae9fb;
+    border: 2px solid #012443;
     border-radius: 10px;
-background-color: #d338db;
-color:#fae9fb;
+background-color: rgb(255, 226, 111);
+color:#012443;
 cursor: pointer;
 }
     /* right: -20px; */
@@ -86,9 +86,9 @@ cursor: pointer;
   
 
 .booknow:hover{
-    background-color: rgba(250, 233, 251, 0.9);
-    color:#d338db;
-    border: 3px solid #d338db;
+    background-color: #012443;
+    color:#ffe26f;
+    border: 3px solid #ffe26f;
     font-weight: bold;
 
 }
@@ -97,7 +97,7 @@ cursor: pointer;
 }
 
 .s1_border {
-    border: 1px solid dark#fae9fb;
+    border: 1px solid #ffe26f;
     background-color: rgba(250, 233, 251, 0.7);
     border-radius: 10px;
     padding: 10px;
@@ -105,7 +105,7 @@ cursor: pointer;
 
 .section2 {
     /* background-color: #fa6f2ee3; */
-    background-color: #fae9fb;
+    background-color: white;
     text-align: center;
     padding: 50px;
 }
@@ -124,7 +124,7 @@ cursor: pointer;
 
 .menu:hover {
     /* border: 2px solid; */
-    box-shadow: 1px 2px 20px #dd3adb;
+    box-shadow: 1px 2px 20px #012443;
     cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ cursor: pointer;
     height: 75px;
     text-decoration: none;
     color: black;
-    background-color: #fae9fb;
+    background-color: #ffe26f;
     margin: 0px;
     border: none;
     border-radius: 10px;
@@ -204,8 +204,8 @@ cursor: pointer;
 }
 
 .num1:hover {
-    background-color: #d338db;
-    color: #fae9fb;
+    background-color: #012443;
+    color: #ffe26f;
     text-shadow: 1px 1px 2px black;
     /* border-bottom: 2px inset #fae9fb; */
 }
@@ -220,7 +220,7 @@ cursor: pointer;
     padding: 40px;
     font-size: medium;
     margin: 0px 500px;
-    border-top: 2px solid #d338db;
+    border-top: 2px solid #012443;
 }
 
 .s3flex {
@@ -241,8 +241,7 @@ cursor: pointer;
 }
 
 .martab {
-    background-color: #fae9fb;
-    ;
+    background-color: #ffe26f;
     padding: 40px 10px;
     border: 1px inset #d338db;
     box-shadow: 2px 2px 10px black;
@@ -257,7 +256,7 @@ cursor: pointer;
 }
 
 .martab:hover {
-    box-shadow: 1px 1px 20px #d338db;
+    box-shadow: 1px 1px 20px #012443;
     cursor: pointer;
 }
 
@@ -268,14 +267,16 @@ cursor: pointer;
 }
 
 .fa_arrow {
-    color: #d338db;
-    border: 2px solid #d338db;
+    color: #ffe26f;
+    border: 2px solid #ffe26f;
     border-radius: 5px;
     float: right;
+    cursor: pointer;
 }
 
 .fa {
     font-size: 30px !important;
+    cursor: pointer;
 }
 
 a {
@@ -286,20 +287,20 @@ a {
 @media (max-width:1200px) {
     .header_menu {
         flex-direction: column;
-        background-color: #d338db;
+        background-color: #ffe26f;
         line-height: 60px;
         text-align: center;
         color:#fae9fb;
     }
     .header_menu h1 {
-        background-color: #fae9fb;
-        color: #d338db;
+        background-color: #ffe26f;
+        color: #012443;
         width: 100%;
     }
     .navbar_header {
         flex: none;
-        color: #fae9fb;
-        background-color: #d338db;
+        color: #ffe26f;
+        background-color: #012443;
         line-height: 60px;
         height: 60px;
         justify-content: center;
@@ -311,18 +312,18 @@ a {
         width: 100px;
         text-align: center;
         line-height: 40px;
-        color: #fae9fb;
+        color: #ffe26f;
     }
     .navbar_menu:hover {
     /* background-color: #f01616; */
-    background-color: #fae9fb;
-        color: #d338db;
+    background-color: #ffe26f;
+        color: #012443;
         cursor: pointer;
-    } */
+    }
     .s1_header {
         padding: 40px 50px;
         height: 450px;
-        color: #d338db;
+        color: #012443;
     }
     .s1_header h2 {
         padding: 10px 0px;
@@ -334,9 +335,23 @@ a {
         padding: 50px 50px;
         font-size: small;
     }
+    .booknow{
+        padding:10px;
+        height:30px;
+        /* line-height: 30px; */
+        font-size: large;
+        border: 2px solid #012443;
+        border-radius: 10px;
+    background-color: #ffe26f;
+    color:#012443;
+    cursor: pointer;
+    }
+    .bn{
+        padding:100px 0px 0px;
+    }
     .section2 {
         /* background-color: #fa6f2ee3; */
-        background-color: #fae9fb;
+        background-color: white;
         text-align: center;
         padding: 50px;
     }
@@ -344,7 +359,7 @@ a {
         padding: 40px;
         font-size: medium;
         margin: 0px 200px;
-        border-top: 2px solid #d338db;
+        border-top: 2px solid #012443;
     }
     .s2a {
         padding: 0px 60px 10px;
@@ -371,9 +386,9 @@ a {
         font-size: medium;
     }
     .martab {
-        background-color: #fae9fb;
+        background-color: #ffe26f;
         padding: 40px 10px;
-        border: 1px inset #d338db;
+        border: 1px inset #012443;
         box-shadow: 2px 2px 10px black;
         border-radius: 10px;
         box-sizing: content-box;
@@ -388,7 +403,7 @@ a {
     .f-footer {
         height: 40px;
         box-shadow: 1px 0px 10px #fae9fb;
-        background: #d338db;
+        background: #ffe26f;
         text-align: center;
         line-height: 40px;
         
@@ -409,7 +424,7 @@ a {
         
     }
     .header_menu h1 {
-        background-color: #fae9fb;
+        background-color: #ffe26f;
         height: 60px;
     font-size: medium;
     padding:0px;
@@ -428,16 +443,16 @@ a {
         text-align: center;
         line-height: 40px;
         font-size: small;
-        color:#fae9fb
+        color:#ffe26f
     }
     .s1_header {
         padding: 40px 50px;
         height: 450px;
-        color: #d338db;
+        color: #012443;
         font-size: 10px;
     }
     .section2 {
-        background-color: #fae9fb;
+        background-color: white;
         text-align: center;
         /* padding: 50px; */
     }
@@ -454,7 +469,7 @@ a {
         padding: 10px;
         font-size: medium;
         margin: 0px 0px;
-        border-top: 2px solid #d338db;
+        border-top: 2px solid #012443;
     }
     .num1 {
         border-radius: 10px;
@@ -479,8 +494,8 @@ a {
         flex-direction: column;
     } */
     .martab {
-        background-color: #fae9fb;
-        border: 1px inset #d338db;
+        background-color: #ffe26f;
+        border: 1px inset #012443;
         box-shadow: 2px 2px 10px black;
         border-radius: 10px;
         height: 100%;
@@ -510,8 +525,8 @@ a {
         font-size: 20px;
     }
     .f-footer p{
-        box-shadow: 1px 0px 10px #fae9fb;
-        background: #d338db;
+        box-shadow: 1px 0px 10px #ffe26f;
+        background: #012443;
         text-align: center;
     }
     footer h4 {
@@ -521,8 +536,8 @@ a {
     }
     .f-footer {
         height: 0px;
-        box-shadow: 1px 0px 10px #fae9fb;
-        background: #d338db;
+        box-shadow: 1px 0px 10px #ffe26f;
+        background: #012443;
         text-align: center;
         line-height: 0px;
         font-size:10px;
@@ -537,8 +552,8 @@ a {
     display: flex;
     line-height: 60px;
     justify-content: center;
-    box-shadow: 0px 1px 1px #d338db;
-    background-color: #dea8e0;
+    box-shadow: 0px 1px 1px #012443;
+    background-color: #ffe26f;
 }
 
 footer h4 {
@@ -559,11 +574,12 @@ footer p {
 
 .f-footer {
     height: 100%;
-    box-shadow: 1px 0px 10px #fae9fb;
-    background: #d338db;
+    box-shadow: 1px 0px 10px #012443;
+    background: #012443;
     text-align: center;
     line-height: 40px;
     overflow-wrap:break-word;
+    color: #ffe26f;
 }
 .f-footer p {
 display: inline;

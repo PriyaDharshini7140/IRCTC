@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="ir.css">
+<link rel="stylesheet" href="new.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -284,7 +284,7 @@
         <div id="capt">
             <p>  Captcha are case sensitive and to be entered in Upper case only</p>
             <img id="target" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6x_Ddwr2-TEkJLCukQhcQFe5gBSprdy_Aw&usqp=CAU" width="50%" height=80px style="margin-left: 6%;"/>
-            <button onclick="change()">Refresh Captcha</button>         
+            <button id="repbtn" onclick="change()">Refresh Captcha</button>         
             <script>
                 var target = document.getElementById('target');
                 var counter = 0;
@@ -319,7 +319,7 @@
             <p>SMS will be sent to this number</p>
         </div>
     </div><br>
-    <center> <button id="reset" onclick="next()" style="width:15%;">Next</button>
+    <center> <button id="reset" onclick="next()" style="width:10%;">Next</button>
         <script>
             function next()
 {
@@ -330,14 +330,15 @@
     fieldname = fields[i];
     if (document.forms["adultform"][fieldname].value === "") {
       alert(fieldname + " can not be empty");
-      return true;
+      return false;
     }
     else{
         alert('Details updates successfilly')
-        window.location.href = "last.html";
-    }
-    return true; 
- }  
+        window.location.href = "pay_irctc.html";
+    } 
+  }
+  alert('Details updates successfilly')
+  return true;
 }
         </script>
         <br>

@@ -2,19 +2,29 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
-}
 
+}
+.main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe26f;
+  background: url("21203.jpg");
+  background-size: 100% 100%;
+  
+}
 .register {
   background: rgb(255, 255, 255);
   box-shadow: 0 0 20px 0px rgb(0 0 0 / 40%);
   border-radius: 30px;
   width: 500px;
-  height: 600px;
+  height: 520px;
   position: relative;
   text-align: center;
   padding: 20px 0;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -35,7 +45,7 @@
   display: flex;
   font-size: 15px;
   font-weight: 600;
-  color: #d338db;
+  color: #012443;
   background: rgb(255, 255, 255);
 }
 
@@ -78,7 +88,7 @@
 }
 
 .container .form input:hover {
-  border-color: #d338db;
+  border-color: #012443;
 }
 
 .container .form select {
@@ -105,7 +115,7 @@
 #Indicator {
   width: 100px;
   border: none;
-  background: #d338db;
+  background: #012443;
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
@@ -140,9 +150,10 @@
 
 
 .action-btns button {
+  text-decoration: none;
   border-radius: 5px;
   border: none;
-  background-color: #d338db;
+  background-color: #012443;
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -153,8 +164,19 @@
 
 .action-btns a {
   text-decoration: none;
-  background-color: #d338db;
+  background-color: #012443;
   color: white;
+}
+.action-btns a:hover {
+  text-decoration: none;
+  background: transparent;
+  color: #012443;
+}
+.action-btns button:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #012443;
+  border: 1px solid #012443;
 }
 
 #personaldetail .action-radio label {
@@ -191,7 +213,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fae9fb;
+  background-color: #ffe26f;
+  background: url("21203.jpg");
+  background-size: 100% 100%;
 }
 
 .login {
@@ -205,7 +229,7 @@
 
 .login h1 {
   text-align: center;
-  color: #d338db;
+  color: #012443;
   padding: 20px;
 }
 
@@ -226,7 +250,7 @@
 
 .log-container form input:hover {
   border-bottom: 1px solid;
-  border-color: #d338db;
+  border-color: #012443;
 }
 
 .log-btn {
@@ -239,7 +263,7 @@
   margin-left: 70px;
   margin-bottom: 40px;
   margin-top: 30px;
-  background-color: #d338db;
+  background-color: #012443;
   color: white;
   border-radius: 50px;
   font-weight: bold;
@@ -252,9 +276,10 @@
 }
 
 .log-btn:hover {
-  background-color: rgb(0, 0, 0);
-  color: #d338db;
+  background-color: rgb(255, 255, 255);
+  color: #012443;
   font-weight: bold;
+  border: 1px solid #012443;
 }
 
 .forgot {
@@ -286,14 +311,14 @@
 nav {
   position: sticky;
   top:0;
-  background-color: #fae9fb;
+  background-color: #ffe26f;
   box-shadow: 0px 0px 10px #B7B7B7;
   height: 60px;
   width: 100%;
 }
 
 label.logo {
-  color:#d338db;
+  color:#012443;
   font-size: 30px;
   line-height: 60px;
   padding: 0 50px;
@@ -309,7 +334,7 @@ nav ul li {
   margin: 0 5px;
 }
 nav ul li a {
-  color:#d338db;
+  color:#012443;
   font-size: 16px;
   font-weight: bold;
   padding: 7px 13px;
@@ -329,7 +354,7 @@ a:hover {
 }
 .checkbtn {
   font-size: 30px;
-  color: #d338db;
+  color: #012443;
   float: right;
   line-height: 60px;
   margin-right: 40px;
@@ -360,7 +385,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #d338db;
+    background: #012443;
     top: 60px;
     left: -100%;
     text-align: center;

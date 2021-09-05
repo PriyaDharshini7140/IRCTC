@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Register</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style_.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,19 @@
 </head>
 
 <body>
-    <section class="register">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class='checkbtn'>
+            <span>&#9776;</span>
+        </label>
+     <label class="logo">Train Ticket Booking</label>
+     <ul>
+         <li><a href="con-example.html">contact us</a></li>
+         <li><a id="id" href="login.html">Sign in</a></li>
+     </ul>
+    </nav>
+    <section class ="main">
+    <div class="register">
         <div class="container">
             <div class="topic">
                 <p>Create Your Account</p>
@@ -71,22 +83,24 @@
                     </div>
             </form>
         </div>
-        <form method="POST" action="login.html">
+        <form action="login.html">
             <div class="form" id="address" style="transform: translateX(0);">
                 <input type="text" name="doorno" placeholder="Flat/Door No" required>
                 <input type="text" name="street" placeholder="Street/Lane" required>
                 <input type="text" name="Pin" placeholder="PinCode" required>
                 <input type="text" name="City" placeholder="City" required>
                 <input type="text" name="State" placeholder="State" required>
-               
+              
 
                 <div class="action-btns">
                     <button type="submit" onclick="Personal()">Back </button>
-                    <button type="submit">Register </a></button>
+                    <button type="submit"><a href="login.html">Register</a></button>
                 </div>
         </form>
         </div>
         </div>
+    </div>
+        </section>
     </section>
     <script>
 

@@ -3,9 +3,13 @@
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    /* background-color: #EFF3F8; */
 }
+/* body{
+  background-color: ;
+} */
 #head {
-    background-color:   #d338db;
+    background-color: #ffe26f   ;
     color: black;
     font-size: 20px;
     height:fit-content;
@@ -15,8 +19,9 @@
 .cont{
     width: 100%;
     display:inline-block;
-    background-color:#fae9fb;
+    background-color:white;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px #B7B7B7;
 }
 .children input[type=text], .children input[type=number], .children select
 {
@@ -44,11 +49,12 @@
 #tb
 {
     width: 100%;
-    background-color: #fae9fb;
+    background-color:white;
     border-collapse: collapse;   
     text-align: center;
     border-radius: 5px;
-    background-image: #fae9fb;
+    box-shadow: 0px 0px 10px #B7B7B7;
+    /* background-image: linear-gradient(0deg, #d338db, #fae9fb); */
 
     
 }
@@ -75,13 +81,18 @@ input[type=text],input[type=number],select
     height: 20px;
 }
 #reset{
-        width:15%;
+        width:fit-content;
         height:fit-content;
         padding: 6px;
-        background-color: #d338db;
-        color:black;
-        border-radius: 6px;
+        background-color: #012443;
+        color: WHITE;
+        border-radius: 8px;
         cursor: pointer;
+}
+#reset:hover
+{
+  background:none;
+  color:#012443;
 }
 a{
     text-decoration:none;
@@ -94,7 +105,7 @@ a{
     width: 50%;   
     color: black;
     display: inline-block;
-    border-right: 2px solid #d338db;
+    border-right: 2px solid #ffe26f;
     text-align: center;
 
 }
@@ -125,11 +136,23 @@ a{
   #capt{
       width: 100%;
       border-right: none;
+       display: flex;
+      flex-direction: column;
+      justify-content:space-between;
   }
-  #num{
+  #repbtn{
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 2%;
+
+  }
+    #num{
       width: 100%;
 
   }
+  #reset{
+    width: fit-content;
+     }
   #trac{
       width: 100%;
       text-align:inherit;
@@ -138,10 +161,11 @@ a{
 nav {
     position: sticky;
     top:0;
-    background-color: #fae9fb;
+    background-color: #ffe26f ;
     box-shadow: 0px 0px 10px #B7B7B7;
     height: 60px;
     width: 100%;
+    color:white;
   }
   
   label.logo {
@@ -171,22 +195,25 @@ nav {
   }
   
   #id{
-    background: #d338db;
+    background: #012443;
+    color: white;
     border-radius: 20px;
   }
   a:hover {
-    background: #d338db;
+    background: #012443;
+    color:white;
     transform: 0.5s;
     border-radius: 20px;
   }
   .checkbtn {
     font-size: 30px;
-    color: #d338db;
+    color: white;
     float: right;
     line-height: 60px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    background-color: #012443;
   }
   #check {
     display: none;
@@ -212,7 +239,7 @@ nav {
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #d338db;
+      background: #ffe26f;
       top: 60px;
       left: -100%;
       text-align: center;
@@ -225,7 +252,7 @@ nav {
     }
     nav ul li a {
       font-size: 20px;
-      color:white
+      color:black;
     }
   
    
@@ -234,7 +261,8 @@ nav {
      border-radius: 20px;
      border: 2px solid;
     border-radius: 20px;
-      color:#111111;
+    color:white;
+    background-color:#012443;
     transform: 0.5s;
     }
     #check:checked ~ ul {
@@ -315,7 +343,7 @@ display: flex;
 height: 40px;
 margin-top: 10px;
 box-shadow: 1px 0px 5px #B7B7B7;
-background: #d338db;
+background: #ffe26f;
  }
  .footer-footer div{
    display: flex;
